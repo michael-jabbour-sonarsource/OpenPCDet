@@ -1,7 +1,7 @@
 #include <torch/torch.h>
 #include <c10/cuda/CUDAGuard.h>
 
-// CUDA function declarations
+//  CUDA function declarations
 vooid bev_pool(int b, int d, int h, int w, int n, int c, int n_intervals, const float* x,
     const int* geom_feats, const int* interval_starts, const int* interval_lengths, float* out);
 
