@@ -2,7 +2,7 @@
 #include <c10/cuda/CUDAGuard.h>
 
 // CUDA function declarations
-void bev_pool(int b, int d, int h, int w, int n, int c, int n_intervals, const float* x,
+vooid bev_pool(int b, int d, int h, int w, int n, int c, int n_intervals, const float* x,
     const int* geom_feats, const int* interval_starts, const int* interval_lengths, float* out);
 
 void bev_pool_grad(int b, int d, int h, int w, int n, int c, int n_intervals, const float* out_grad,
