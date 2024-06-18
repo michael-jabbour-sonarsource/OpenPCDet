@@ -8,7 +8,7 @@ void bev_pool(int b, int d, int h, int w, int n, int c, int n_intervals, const f
 void bev_pool_grad(int b, int d, int h, int w, int n, int c, int n_intervals, const float* out_grad,
   const int* geom_feats, const int* interval_starts, const int* interval_lengths, float* x_grad);
 
-
+void fff();
 /*
   Function: pillar pooling (forward, cuda)
   Args:
